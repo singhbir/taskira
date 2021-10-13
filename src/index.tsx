@@ -6,6 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import storeConfig from "./redux/store";
+import { initializeApp } from "firebase/app";
+import { firebaseConfig } from "firebaseconfig";
+
+const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
