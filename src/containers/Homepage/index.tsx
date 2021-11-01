@@ -2,22 +2,11 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Typist from "react-typist";
-
-const HeadText = styled.h3`
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-  text-align: center;
-  transition: all ease-in-out;
-`;
-
-const StyledSpan = styled.span`
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-`;
+import { HeadText, StyledSpan } from "styles/typography";
 
 const CenterArea = styled.div`
-  height: 600px;
-  width: 600px;
+  height: 650px;
+  width: 650px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -33,7 +22,7 @@ const CenterArea = styled.div`
 const HomePage = () => {
   return (
     <div>
-      <div className="mt-5">
+      <div>
         <Navbar />
       </div>
       <div className="flex justify-center items-center m-10">
